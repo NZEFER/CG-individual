@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca52oil0alq5t"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ownhj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ownhj")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="gui_input" from="Panel" to="Panel" method="_on_panel_gui_input"]
